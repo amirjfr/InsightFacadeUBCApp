@@ -1,0 +1,47 @@
+{
+    "title": "Test GT, IS Filters",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "busi"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 85
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 85.08,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 85.76,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 86.63,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 88.88,
+            "courses_dept": "busi"
+        }
+    ]
+}
+
+

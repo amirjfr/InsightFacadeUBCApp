@@ -1,0 +1,108 @@
+{
+    "title": "test courses_instructor string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_instructor": "king, mary ann"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 50
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        },
+        {
+            "courses_instructor": "king, mary ann"
+        }
+    ]
+}

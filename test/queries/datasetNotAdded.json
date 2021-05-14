@@ -1,0 +1,38 @@
+{
+    "title": "Query for a dataset not added",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "myCourses_avg": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "myCourses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "myCourses_avg": 95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "myCourses_dept",
+                "myCourses_id",
+                "myCourses_avg"
+            ],
+            "ORDER": "myCourses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

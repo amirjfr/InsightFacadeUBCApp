@@ -1,0 +1,29 @@
+{
+    "title": "Select avg WHERE avg > 100 && avg < 90",
+    "query": {
+        "WHERE":
+        {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 100
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 90
+                    }
+                }
+            ]
+        }
+    ,
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

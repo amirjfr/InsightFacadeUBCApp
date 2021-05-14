@@ -1,0 +1,29 @@
+{
+    "title": "invalid value type in query",
+    "query": {
+        "WHERE":
+        {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": "100"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 90
+                    }
+                }
+            ]
+        }
+    ,
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,31 @@
+{
+    "title": "Invalid Transformation Operator",
+    "query": {
+  "WHERE": {
+    "GT": {
+      "courses_avg": 98
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_uuid",
+      "overallAvg"
+    ],
+    "ORDER": "courses_uuid"
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_uuid"
+    ],
+    "APPLY": [
+      {
+        "overallAvg": {
+          "WRONG": "courses_avg"
+        }
+      }
+    ]
+  }
+},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

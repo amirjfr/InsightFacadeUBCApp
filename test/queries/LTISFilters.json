@@ -1,0 +1,67 @@
+{
+    "title": "Test LT, IS Filters",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "busi"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 50
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 4,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 4,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 42.64,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 42.64,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 46.5,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 46.95,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 49.17,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 49.47,
+            "courses_dept": "busi"
+        },
+        {
+            "courses_avg": 49.47,
+            "courses_dept": "busi"
+        }
+    ]
+}
+
+

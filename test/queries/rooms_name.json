@@ -1,0 +1,79 @@
+{
+    "title": "test rooms_name string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_name": "*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "LT": {
+                        "rooms_seats": 8
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "ORDER": "rooms_lon",
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_lat",
+                "rooms_lon"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_fullname": "MacMillan",
+            "rooms_lat": 49.26114,
+            "rooms_lon": -123.25027
+        },
+        {
+            "rooms_fullname": "MacMillan",
+            "rooms_lat": 49.26114,
+            "rooms_lon": -123.25027
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        }
+    ]
+}

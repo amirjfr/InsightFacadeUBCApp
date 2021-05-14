@@ -1,0 +1,22 @@
+{
+    "title": "Test Invalid duplicate LT Filter",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 40,
+                "courses_year": 1900
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+
+

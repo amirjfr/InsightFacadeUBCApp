@@ -1,0 +1,204 @@
+{
+    "title": "put asterisk in input string after and before a letter",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_fullname": "*ci*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "LT": {
+                        "rooms_seats": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "ORDER": "rooms_lon",
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_lat",
+                "rooms_lon"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_lat": 49.26958,
+            "rooms_lon": -123.25741
+        },
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_lat": 49.26958,
+            "rooms_lon": -123.25741
+        },
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_lat": 49.26958,
+            "rooms_lon": -123.25741
+        },
+        {
+            "rooms_fullname": "Anthropology and Sociology",
+            "rooms_lat": 49.26958,
+            "rooms_lon": -123.25741
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Jack Bell Building for the School of Social Work",
+            "rooms_lat": 49.2643,
+            "rooms_lon": -123.25505
+        },
+        {
+            "rooms_fullname": "Biological Sciences",
+            "rooms_lat": 49.26479,
+            "rooms_lon": -123.25249
+        },
+        {
+            "rooms_fullname": "Biological Sciences",
+            "rooms_lat": 49.26479,
+            "rooms_lon": -123.25249
+        },
+        {
+            "rooms_fullname": "Biological Sciences",
+            "rooms_lat": 49.26479,
+            "rooms_lon": -123.25249
+        },
+        {
+            "rooms_fullname": "Earth Sciences Building",
+            "rooms_lat": 49.26274,
+            "rooms_lon": -123.25224
+        },
+        {
+            "rooms_fullname": "Earth and Ocean Sciences - Main",
+            "rooms_lat": 49.26228,
+            "rooms_lon": -123.25198
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Forest Sciences Centre",
+            "rooms_lat": 49.26044,
+            "rooms_lon": -123.24886
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        },
+        {
+            "rooms_fullname": "Pharmaceutical Sciences Building",
+            "rooms_lat": 49.26229,
+            "rooms_lon": -123.24342
+        }
+    ]
+}

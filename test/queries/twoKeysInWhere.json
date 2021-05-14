@@ -1,0 +1,29 @@
+{
+    "title": "testing two keys in where",
+    "query": {
+        "WHERE": {
+            "key": "wrong",
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "busi"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 85
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

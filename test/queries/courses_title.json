@@ -1,0 +1,30 @@
+{
+    "title": "test courses_title string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_title": "intro comp sys"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 65
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_title": "intro comp sys"
+        }
+    ]
+}

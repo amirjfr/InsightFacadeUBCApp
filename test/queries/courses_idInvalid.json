@@ -1,0 +1,26 @@
+{
+    "title": "test invalid courses_id string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_id": 210
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 65
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

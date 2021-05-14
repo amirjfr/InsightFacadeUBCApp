@@ -1,0 +1,6 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "test all filters for rooms",
+    "query3": "test transformation and group for rooms",
+    "query4": "test transformation and group for rooms with two applies and two groups"
+}

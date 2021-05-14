@@ -1,0 +1,28 @@
+{
+    "title": "test invalid courses_year string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_year": "2011"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 55
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_year",
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

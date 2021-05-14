@@ -1,0 +1,28 @@
+{
+    "title": "test invalid courses_audit string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_audit": "0"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 45
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

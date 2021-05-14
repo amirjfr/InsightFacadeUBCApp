@@ -1,0 +1,39 @@
+{
+    "title": "test courses_fail string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_fail": 50
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 65
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_fail",
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_fail": 50,
+            "courses_dept": "chem",
+            "courses_avg": 59.83
+        },
+        {
+            "courses_fail": 50,
+            "courses_dept": "chem",
+            "courses_avg": 61.54
+        }
+    ]
+}

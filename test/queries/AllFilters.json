@@ -1,0 +1,45 @@
+{
+    "title": "Test All Filters, IS, EQ, LT, GT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "rooms_lat": 200
+                    }
+                },
+                {
+                    "EQ": {
+                        "rooms_seats": 225
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 49
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_number": "100"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_fullname"
+            ],
+            "ORDER": "rooms_fullname"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "GEOG",
+            "rooms_fullname": "Geography"
+        }
+    ]
+}
+
+

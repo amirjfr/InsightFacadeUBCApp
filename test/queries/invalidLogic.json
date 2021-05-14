@@ -1,0 +1,38 @@
+{
+    "title": "Invalid Logic Value",
+    "query": {
+        "WHERE": {
+            "LT": [
+                {
+                    "LT": {
+                        "courses_avg": 51
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 50
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 49
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "busi"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

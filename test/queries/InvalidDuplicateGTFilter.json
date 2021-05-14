@@ -1,0 +1,22 @@
+{
+    "title": "Test Invalid duplicate GT Filter",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99,
+                "courses_year": 1900
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+
+

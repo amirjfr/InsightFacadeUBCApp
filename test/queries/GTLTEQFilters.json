@@ -1,0 +1,48 @@
+{
+    "title": "Test GT, LT, EQ Filters",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_avg": 51
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 50
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 49
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 50,
+            "courses_dept": "psyc"
+        },
+        {
+            "courses_avg": 50,
+            "courses_dept": "chbe"
+        },
+        {
+            "courses_avg": 50,
+            "courses_dept": "busi"
+        }
+    ]
+}
+
+

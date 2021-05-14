@@ -1,0 +1,59 @@
+{
+    "title": "test courses_year string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_year": 2011
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 55
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_year",
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_year": 2011,
+            "courses_dept": "busi",
+            "courses_avg": 54.51
+        },
+        {
+            "courses_year": 2011,
+            "courses_dept": "busi",
+            "courses_avg": 52.4
+        },
+        {
+            "courses_year": 2011,
+            "courses_dept": "chbe",
+            "courses_avg": 42
+        },
+        {
+            "courses_year": 2011,
+            "courses_dept": "civl",
+            "courses_avg": 49.25
+        },
+        {
+            "courses_year": 2011,
+            "courses_dept": "math",
+            "courses_avg": 54.82
+        },
+        {
+            "courses_year": 2011,
+            "courses_dept": "medg",
+            "courses_avg": 54.43
+        }
+    ]
+}

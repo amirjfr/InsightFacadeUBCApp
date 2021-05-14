@@ -1,0 +1,21 @@
+{
+    "title": "Test Invalid EQ Filter",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": "60"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+
+

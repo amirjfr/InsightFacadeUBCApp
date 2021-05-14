@@ -1,0 +1,76 @@
+{
+    "title": "test courses_pass string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_pass": 50
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 65
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_pass"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "busi",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "busi",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "busi",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "econ",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "econ",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "math",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "micb",
+            "courses_pass": 50
+        },
+        {
+            "courses_dept": "poli",
+            "courses_pass": 50
+        }
+    ]
+}

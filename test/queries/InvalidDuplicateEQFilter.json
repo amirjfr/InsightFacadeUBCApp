@@ -1,0 +1,22 @@
+{
+    "title": "Test Duplicate Invalid EQ Filter",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 60 ,
+                "courses_year": 1900
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+
+

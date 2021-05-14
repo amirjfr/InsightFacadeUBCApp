@@ -1,0 +1,55 @@
+{
+    "title": "123",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "LT": {
+                        "rooms_seats": 21
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_address",
+                "minLat",
+                "minSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "minSeats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_address"
+            ],
+            "APPLY": [
+                {
+                    "minSeats": {
+                        "COUNT": "rooms_seats"
+                    }
+                },
+                {
+                    "minLat": {
+                        "COUNT": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"rooms_shortname":"IBLC","rooms_address":"1961 East Mall V6T 1Z1","minLat":1,"minSeats":4},{"rooms_shortname":"WOOD","rooms_address":"2194 Health Sciences Mall","minLat":1,"minSeats":4},{"rooms_shortname":"SPPH","rooms_address":"2206 East Mall","minLat":1,"minSeats":3},{"rooms_shortname":"FSC","rooms_address":"2424 Main Mall","minLat":1,"minSeats":2},{"rooms_shortname":"ANGU","rooms_address":"2053 Main Mall","minLat":1,"minSeats":2},{"rooms_shortname":"SOWK","rooms_address":"2080 West Mall","minLat":1,"minSeats":2},{"rooms_shortname":"MCML","rooms_address":"2357 Main Mall","minLat":1,"minSeats":2},{"rooms_shortname":"PHRM","rooms_address":"2405 Wesbrook Mall","minLat":1,"minSeats":2},{"rooms_shortname":"ALRD","rooms_address":"1822 East Mall","minLat":1,"minSeats":1},{"rooms_shortname":"AUDX","rooms_address":"1924 West Mall","minLat":1,"minSeats":1},{"rooms_shortname":"BIOL","rooms_address":"6270 University Boulevard","minLat":1,"minSeats":1},{"rooms_shortname":"BUCH","rooms_address":"1866 Main Mall","minLat":1,"minSeats":1},{"rooms_shortname":"LASR","rooms_address":"6333 Memorial Road","minLat":1,"minSeats":1},{"rooms_shortname":"SCRF","rooms_address":"2125 Main Mall","minLat":1,"minSeats":1},{"rooms_shortname":"ORCH","rooms_address":"6363 Agronomy Road","minLat":1,"minSeats":1}]
+}
+
+
